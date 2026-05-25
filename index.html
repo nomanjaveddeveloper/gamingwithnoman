@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="GamingWithNoman™ – Premium Gaming PCs, Accessories, RGB Setups & More. Experience the future of gaming hardware with our cutting-edge collection." />
+  <title>GamingWithNoman™ | Premium Gaming Hardware & PC Store</title>
+  <meta name="keywords" content="GamingWithNoman, gaming store, gaming PC, custom gaming PCs, RGB gaming setup, gaming accessories, gaming keyboard, gaming mouse, gaming headset, gaming monitor, esports gaming, gaming hardware, PC components, RTX gaming PC, high performance gaming, gamer setup, gaming ecommerce store, gaming rigs, gaming technology, GamingWithNoman™ store, pro gaming gear, streaming setup, budget gaming PC, luxury gaming setup, gamer accessories">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Swiper.js -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- AOS Animation -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== LOADER ===================== -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">NEXUS</div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+      <div class="loader-text">INITIALIZING SYSTEMS...</div>
+    </div>
+  </div>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar navbar-expand-lg nexus-navbar sticky-top" id="mainNav">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand nexus-brand" href="#home">
+        <span class="brand-icon"><i class="bi bi-cpu-fill"></i></span>
+         <span class="brand-accent">GamingWithNoman™</span>
+      </a>
+      <button class="navbar-toggler nexus-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto gap-1">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#featured">PCs</a></li>
+          <li class="nav-item"><a class="nav-link" href="#accessories">Accessories</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#peripherals">Peripherals</a></li>
+          <li class="nav-item"><a class="nav-link" href="#compare">Compare</a></li>
+          <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions d-flex align-items-center gap-3">
+          <button class="nav-icon-btn" id="searchToggle" title="Search"><i class="bi bi-search"></i></button>
+          <button class="nav-icon-btn position-relative" id="wishlistBtn" title="Wishlist">
+            <i class="bi bi-heart"></i>
+            <span class="badge-count" id="wishlistCount">0</span>
+          </button>
+          <button class="nav-icon-btn position-relative" id="cartBtn" title="Cart">
+            <i class="bi bi-bag"></i>
+            <span class="badge-count" id="cartCount">0</span>
+          </button>
+          <a href="#featured" class="btn nexus-btn-sm">Shop Now</a>
+        </div>
+      </div>
+    </div>
+    <!-- Search Bar -->
+    <div class="search-overlay" id="searchOverlay">
+      <div class="container">
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="Search gaming products..." />
+          <button id="searchClose"><i class="bi bi-x-lg"></i></button>
+        </div>
+        <div id="searchResults" class="search-results"></div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO SECTION ===================== -->
+  <section class="hero-section" id="home">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-particles" id="particles"></div>
+    <div class="floating-orb orb1"></div>
+    <div class="floating-orb orb2"></div>
+    <div class="floating-orb orb3"></div>
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+          <div class="hero-tag"><span class="pulse-dot"></span> New Collection 2025</div>
+          <h1 class="hero-title">
+            DOMINATE<br />
+            <span class="gradient-text">THE GAME</span><br />
+            <span class="hero-sub">WITH NEXUS</span>
+          </h1>
+          <p class="hero-desc">Unleash elite performance with our next-generation gaming rigs, peripherals, and RGB setups. Built for champions. Designed for legends.</p>
+          <div class="hero-cta">
+            <a href="#featured" class="btn nexus-btn-primary me-3">Explore Arsenal</a>
+            <a href="#gallery" class="btn nexus-btn-ghost">View Gallery</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item"><span class="stat-num" data-target="50000">0</span>K+<div class="stat-label">Gamers</div></div>
+            <div class="stat-item"><span class="stat-num" data-target="500">0</span>+<div class="stat-label">Products</div></div>
+            <div class="stat-item"><span class="stat-num" data-target="99">0</span>%<div class="stat-label">Satisfaction</div></div>
+          </div>
+        </div>
+        <div class="col-lg-6 text-center" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+          <div class="hero-pc-showcase">
+            <div class="pc-glow-ring"></div>
+            <img src="111.jpg" alt="Gaming PC" class="hero-pc-img" />
+            <div class="hero-badge badge-top-left">RTX 4090</div>
+            <div class="hero-badge badge-top-right">240Hz</div>
+            <div class="hero-badge badge-bottom">RGB READY</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>SCROLL</span>
+    </div>
+  </section>
+
+  <!-- ===================== STATS STRIP ===================== -->
+  <div class="stats-strip">
+    <div class="container-fluid">
+      <div class="row text-center">
+        <div class="col-6 col-md-3">
+          <div class="strip-stat"><i class="bi bi-shield-check"></i> 2-Year Warranty</div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="strip-stat"><i class="bi bi-truck"></i> Free Shipping Over $99</div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="strip-stat"><i class="bi bi-headset"></i> 24/7 Support</div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="strip-stat"><i class="bi bi-arrow-repeat"></i> 30-Day Returns</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== CATEGORIES SECTION ===================== -->
+  <section class="section-pad" id="categories">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <div class="section-tag">SHOP BY CATEGORY</div>
+        <h2 class="section-title">YOUR BATTLE <span class="gradient-text">STATION</span></h2>
+      </div>
+      <div class="row g-4 mt-3">
+        <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="0">
+          <div class="category-card" onclick="filterProducts('gaming-pc')">
+            <div class="cat-icon"><i class="bi bi-cpu"></i></div>
+            <div class="cat-name">Gaming PCs</div>
+            <div class="cat-count">12 Items</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="100">
+          <div class="category-card" onclick="filterProducts('monitor')">
+            <div class="cat-icon"><i class="bi bi-display"></i></div>
+            <div class="cat-name">Monitors</div>
+            <div class="cat-count">8 Items</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="200">
+          <div class="category-card" onclick="filterProducts('keyboard')">
+            <div class="cat-icon"><i class="bi bi-keyboard"></i></div>
+            <div class="cat-name">Keyboards</div>
+            <div class="cat-count">10 Items</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="300">
+          <div class="category-card" onclick="filterProducts('mouse')">
+            <div class="cat-icon"><i class="bi bi-mouse2"></i></div>
+            <div class="cat-name">Mice</div>
+            <div class="cat-count">9 Items</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="400">
+          <div class="category-card" onclick="filterProducts('headset')">
+            <div class="cat-icon"><i class="bi bi-headphones"></i></div>
+            <div class="cat-name">Headsets</div>
+            <div class="cat-count">7 Items</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="500">
+          <div class="category-card" onclick="filterProducts('chair')">
+            <div class="cat-icon"><i class="bi bi-person-workspace"></i></div>
+            <div class="cat-name">Chairs</div>
+            <div class="cat-count">6 Items</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FEATURED GAMING PCs ===================== -->
+  <section class="section-pad bg-dark-alt" id="featured">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <div class="section-tag">FLAGSHIP MACHINES</div>
+        <h2 class="section-title">FEATURED <span class="gradient-text">GAMING PCs</span></h2>
+        <p class="section-desc">Engineered for supremacy. Built for those who refuse to lose.</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="filter-bar text-center my-4" data-aos="fade-up" data-aos-delay="100">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="gaming-pc">Gaming PCs</button>
+        <button class="filter-btn" data-filter="monitor">Monitors</button>
+        <button class="filter-btn" data-filter="keyboard">Keyboards</button>
+        <button class="filter-btn" data-filter="mouse">Mice</button>
+        <button class="filter-btn" data-filter="headset">Headsets</button>
+        <button class="filter-btn" data-filter="chair">Chairs</button>
+      </div>
+
+      <!-- Price Range -->
+      <div class="price-filter text-center mb-4" data-aos="fade-up" data-aos-delay="150">
+        <label>Max Price: $<span id="priceVal">5000</span></label>
+        <input type="range" id="priceRange" min="100" max="5000" value="5000" step="100" class="nexus-range" />
+      </div>
+
+      <!-- Products Grid -->
+      <div class="row g-4" id="productsGrid">
+        <!-- Products injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GAMING ACCESSORIES ===================== -->
+  <section class="section-pad" id="accessories">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <div class="section-tag">POWER YOUR PLAY</div>
+        <h2 class="section-title">GAMING <span class="gradient-text">ACCESSORIES</span></h2>
+      </div>
+      <div class="swiper accessories-swiper mt-5">
+        <div class="swiper-wrapper" id="accessoriesSwiper">
+          <!-- Injected by JS -->
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next nexus-swiper-btn"></div>
+        <div class="swiper-button-prev nexus-swiper-btn"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== RGB GALLERY ===================== -->
+  <section class="section-pad bg-dark-alt" id="gallery">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <div class="section-tag">SETUPS & BATTLESTATIONS</div>
+        <h2 class="section-title">RGB <span class="gradient-text">GALLERY</span></h2>
+        <p class="section-desc">Real setups from the NEXUS community. Pure aesthetic perfection.</p>
+      </div>
+      <div class="gallery-grid mt-5" id="galleryGrid">
+        <div class="gallery-item gallery-wide" data-aos="fade-right">
+          <img src="d4v6o812rh441.jpg" alt="RGB Setup 1" />
+          <div class="gallery-overlay"><span>Ultimate RGB Battlestation</span></div>
+        </div>
+        <div class="gallery-item" data-aos="fade-down">
+          <img src="neon.webp" alt="RGB Setup 2" />
+          <div class="gallery-overlay"><span>Neon Dream Setup</span></div>
+        </div>
+        <div class="gallery-item" data-aos="fade-left">
+          <img src="gerwyn-manuel-desk-setup-eva-02.jpg" alt="RGB Setup 3" />
+          <div class="gallery-overlay"><span>Cyberpunk Station</span></div>
+        </div>
+        <div class="gallery-item" data-aos="fade-right">
+          <img src="1744332196449.jpg" alt="RGB Setup 4" />
+          <div class="gallery-overlay"><span>Pro Player Rig</span></div>
+        </div>
+        <div class="gallery-item gallery-tall" data-aos="fade-left">
+          <img src="hq720.jpg" alt="RGB Setup 5" />
+          <div class="gallery-overlay"><span>Triple Monitor Elite</span></div>
+        </div>
+        <div class="gallery-item gallery-wide" data-aos="fade-up">
+          <img src="y7wq2svj7rx71.jpg" alt="RGB Setup 6" />
+          <div class="gallery-overlay"><span>Dark Matter Setup</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PERIPHERALS SECTION ===================== -->
+  <section class="section-pad" id="peripherals">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <div class="section-tag">PRECISION TOOLS</div>
+        <h2 class="section-title">KEYBOARD, MOUSE <span class="gradient-text">& HEADSETS</span></h2>
+      </div>
+      <div class="row g-4 mt-3" id="peripheralsGrid">
+        <!-- Injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GAMING CHAIRS & DESKS ===================== -->
+  <section class="section-pad bg-dark-alt" id="chairs">
+    <div class="container">
+      <div class="section-header" data-aos="fade-right">
+        <div class="section-tag">COMFORT MEETS PERFORMANCE</div>
+        <h2 class="section-title">CHAIRS & <span class="gradient-text">DESKS</span></h2>
+      </div>
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+          <div class="chair-showcase">
+            <img src="https://images.unsplash.com/photo-1598550476439-6847785fcea6?w=600&q=80" alt="Gaming Chair" class="w-100 rounded-3" />
+            <div class="chair-badge">🔥 Best Seller</div>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+          <div class="row g-3" id="chairsGrid">
+            <!-- Injected by JS -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PRODUCT COMPARISON ===================== -->
+  <section class="section-pad" id="compare">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <div class="section-tag">SIDE BY SIDE</div>
+        <h2 class="section-title">PC <span class="gradient-text">COMPARISON</span></h2>
+      </div>
+      <div class="compare-table-wrap mt-5" data-aos="fade-up" data-aos-delay="100">
+        <table class="compare-table w-100">
+          <thead>
+            <tr>
+              <th>Specification</th>
+              <th><span class="compare-tier">NEXUS APEX</span></th>
+              <th><span class="compare-tier">NEXUS ULTRA</span></th>
+              <th><span class="compare-tier">NEXUS PRO</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>GPU</td><td class="highlight">RTX 4090 24GB</td><td>RTX 4080 16GB</td><td>RTX 4070 Ti</td></tr>
+            <tr><td>CPU</td><td class="highlight">Intel i9-14900K</td><td>Intel i7-14700K</td><td>Ryzen 9 7900X</td></tr>
+            <tr><td>RAM</td><td class="highlight">64GB DDR5</td><td>32GB DDR5</td><td>32GB DDR5</td></tr>
+            <tr><td>Storage</td><td class="highlight">4TB NVMe SSD</td><td>2TB NVMe SSD</td><td>1TB NVMe SSD</td></tr>
+            <tr><td>Cooling</td><td class="highlight">360mm AIO</td><td>240mm AIO</td><td>Air Cooler</td></tr>
+            <tr><td>RGB</td><td class="highlight">Full RGB</td><td>Full RGB</td><td>Partial RGB</td></tr>
+            <tr><td>Price</td><td class="highlight neon-green">$4,299</td><td>$2,899</td><td>$1,799</td></tr>
+            <tr>
+              <td></td>
+              <td><button class="btn nexus-btn-primary w-100" onclick="addToCart({name:'NEXUS APEX',price:4299,category:'gaming-pc',img:'https://images.unsplash.com/photo-1593640408182-31c228b30a92?w=300&q=80'})">Add to Cart</button></td>
+              <td><button class="btn nexus-btn-outline w-100" onclick="addToCart({name:'NEXUS ULTRA',price:2899,category:'gaming-pc',img:'https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=300&q=80'})">Add to Cart</button></td>
+              <td><button class="btn nexus-btn-outline w-100" onclick="addToCart({name:'NEXUS PRO',price:1799,category:'gaming-pc',img:'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=300&q=80'})">Add to Cart</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BRANDS SECTION ===================== -->
+  <section class="section-pad bg-dark-alt" id="brands">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <div class="section-tag">TRUSTED PARTNERS</div>
+        <h2 class="section-title">GAMING <span class="gradient-text">BRANDS</span></h2>
+      </div>
+      <div class="brands-swiper swiper mt-5">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><div class="brand-logo">NVIDIA</div></div>
+          <div class="swiper-slide"><div class="brand-logo">AMD</div></div>
+          <div class="swiper-slide"><div class="brand-logo">ASUS ROG</div></div>
+          <div class="swiper-slide"><div class="brand-logo">MSI</div></div>
+          <div class="swiper-slide"><div class="brand-logo">RAZER</div></div>
+          <div class="swiper-slide"><div class="brand-logo">CORSAIR</div></div>
+          <div class="swiper-slide"><div class="brand-logo">ALIENWARE</div></div>
+          <div class="swiper-slide"><div class="brand-logo">LOGITECH G</div></div>
+          <div class="swiper-slide"><div class="brand-logo">STEELSERIES</div></div>
+          <div class="swiper-slide"><div class="brand-logo">INTEL</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== REVIEWS SECTION ===================== -->
+  <section class="section-pad" id="reviews">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <div class="section-tag">COMMUNITY VOICES</div>
+        <h2 class="section-title">WHAT <span class="gradient-text">GAMERS SAY</span></h2>
+      </div>
+      <div class="swiper reviews-swiper mt-5">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="review-card">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">"The NEXUS APEX PC is an absolute beast. Hitting 240fps consistently in every game. The RGB setup is immaculate. Best purchase of my life."</p>
+              <div class="reviewer"><img src="https://i.pravatar.cc/60?img=1" alt="Reviewer" /><div><strong>Alex Chen</strong><span>Pro Esports Player</span></div></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="review-card">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">"Customer service is phenomenal. Setup was delivered in perfect condition with full cable management included. Worth every penny."</p>
+              <div class="reviewer"><img src="https://i.pravatar.cc/60?img=5" alt="Reviewer" /><div><strong>Sarah Martinez</strong><span>Streamer & Content Creator</span></div></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="review-card">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">"The keyboard and mouse combo I bought here completely changed how I play. Cherry MX switches feel incredible. NEXUS is my go-to store."</p>
+              <div class="reviewer"><img src="https://i.pravatar.cc/60?img=8" alt="Reviewer" /><div><strong>Marcus Wright</strong><span>FPS Champion</span></div></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="review-card">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">"Received my custom gaming chair and desk setup today. Quality is premium — way better than I expected. The RGB synchronization is fire!"</p>
+              <div class="reviewer"><img src="https://i.pravatar.cc/60?img=12" alt="Reviewer" /><div><strong>Yuki Tanaka</strong><span>Game Developer</span></div></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="review-card">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">"Fast shipping, incredible packaging, and the gaming monitor has zero dead pixels. Color accuracy is insane for gaming and creative work."</p>
+              <div class="reviewer"><img src="https://i.pravatar.cc/60?img=15" alt="Reviewer" /><div><strong>Jamie Brooks</strong><span>Digital Artist & Gamer</span></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ SECTION ===================== -->
+  <section class="section-pad bg-dark-alt" id="faq">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5" data-aos="fade-right">
+          <div class="section-tag">GOT QUESTIONS?</div>
+          <h2 class="section-title">FREQUENTLY <span class="gradient-text">ASKED</span></h2>
+          <p class="mt-3" style="color:var(--text-muted)">Can't find your answer here? Reach out to our 24/7 support team and we'll respond within minutes.</p>
+          <a href="#contact" class="btn nexus-btn-primary mt-3">Contact Support</a>
+        </div>
+        <div class="col-lg-7 mt-4 mt-lg-0" data-aos="fade-left">
+          <div class="accordion nexus-accordion" id="faqAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">Do NEXUS gaming PCs come pre-assembled?</button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">Yes! All NEXUS Gaming PCs are fully assembled, tested, and benchmarked before shipping. They arrive ready to power on — just plug in your monitor and peripherals and start gaming immediately.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">What warranty do I get with my purchase?</button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">All gaming PCs include a 2-year comprehensive warranty covering parts and labour. Accessories come with a 1-year warranty. We also offer extended warranty plans up to 4 years.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">Can I customize a PC build?</button>
+              </h2>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">Absolutely! We offer a full custom PC builder. Choose your CPU, GPU, RAM, storage, case, cooling, and RGB setup. Our expert builders will assemble and test it to perfection.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">How long does shipping take?</button>
+              </h2>
+              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">Standard shipping takes 3–5 business days. Express delivery (1–2 days) is available. Custom PC builds typically ship within 5–7 business days after assembly and QA testing.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">Do you offer financing options?</button>
+              </h2>
+              <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">Yes! We partner with major financing platforms offering 0% APR for 12 months on orders over $500. Apply at checkout in seconds with instant approval decisions.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== NEWSLETTER ===================== -->
+  <section class="newsletter-section">
+    <div class="container text-center">
+      <div data-aos="zoom-in">
+        <div class="section-tag">JOIN THE NEXUS</div>
+        <h2 class="section-title">GET EXCLUSIVE <span class="gradient-text">DEALS</span></h2>
+        <p style="color:var(--text-muted)">Subscribe for drop alerts, flash sales, and gaming news. Zero spam. Pure power.</p>
+        <form class="newsletter-form mt-4" id="newsletterForm" onsubmit="submitNewsletter(event)">
+          <div class="newsletter-input-wrap">
+            <input type="email" id="newsletterEmail" placeholder="Enter your email address" required />
+            <button type="submit" class="btn nexus-btn-primary">SUBSCRIBE</button>
+          </div>
+          <div id="newsletterMsg" class="mt-2"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT SECTION ===================== -->
+  <section class="section-pad bg-dark-alt" id="contact">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <div class="section-tag">REACH OUT</div>
+        <h2 class="section-title">CONTACT <span class="gradient-text">US</span></h2>
+      </div>
+      <div class="row g-5 mt-2">
+        <div class="col-lg-5" data-aos="fade-right">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="bi bi-geo-alt-fill"></i>
+              <div><strong>Address</strong><br />Nexus Tower, 42 Cyber Boulevard,<br />San Francisco, CA 94105</div>
+            </div>
+            <div class="contact-item">
+              <i class="bi bi-telephone-fill"></i>
+              <div><strong>Phone</strong><br />+1 (800) NEXUS-GG<br />+1 (800) 639-8744</div>
+            </div>
+            <div class="contact-item">
+              <i class="bi bi-envelope-fill"></i>
+              <div><strong>Email</strong><br />support@nexusgaming.gg<br />sales@nexusgaming.gg</div>
+            </div>
+            <div class="contact-item">
+              <i class="bi bi-clock-fill"></i>
+              <div><strong>Hours</strong><br />24/7 Online Support<br />Mon–Sat 9AM–8PM (In-store)</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7" data-aos="fade-left">
+          <form class="contact-form" id="contactForm" onsubmit="submitContact(event)" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="form-group-nexus">
+                  <input type="text" id="cName" placeholder="Your Name" required />
+                  <div class="form-err" id="nameErr"></div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group-nexus">
+                  <input type="email" id="cEmail" placeholder="Email Address" required />
+                  <div class="form-err" id="emailErr"></div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group-nexus">
+                  <input type="text" id="cSubject" placeholder="Subject" required />
+                  <div class="form-err" id="subjectErr"></div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group-nexus">
+                  <select id="cCategory">
+                    <option value="">Select Inquiry Type</option>
+                    <option value="order">Order Support</option>
+                    <option value="technical">Technical Support</option>
+                    <option value="custom">Custom Build</option>
+                    <option value="warranty">Warranty Claim</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group-nexus">
+                  <textarea id="cMessage" placeholder="Your Message" rows="5" required></textarea>
+                  <div class="form-err" id="msgErr"></div>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn nexus-btn-primary w-100">SEND MESSAGE <i class="bi bi-send"></i></button>
+              </div>
+              <div class="col-12" id="contactMsg"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="nexus-footer">
+    <div class="footer-glow"></div>
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <div class="footer-brand">
+            <i class="bi bi-cpu-fill"></i> NEXUS <span>GAMING</span>
+          </div>
+          <p class="footer-about">The ultimate destination for premium gaming hardware. We don't just sell PCs — we build legends.</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-twitch"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-discord"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="footer-heading">Products</h6>
+          <ul class="footer-links">
+            <li><a href="#featured">Gaming PCs</a></li>
+            <li><a href="#accessories">Monitors</a></li>
+            <li><a href="#peripherals">Keyboards</a></li>
+            <li><a href="#peripherals">Mice</a></li>
+            <li><a href="#peripherals">Headsets</a></li>
+            <li><a href="#chairs">Gaming Chairs</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="footer-heading">Company</h6>
+          <ul class="footer-links">
+            <li><a href="#">About NEXUS</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Affiliate</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="footer-heading">Support</h6>
+          <ul class="footer-links">
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="footer-heading">Legal</h6>
+          <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Warranty Info</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 NEXUS GAMING. All rights reserved. Built for champions.</span>
+        <div class="payment-icons">
+          <i class="bi bi-credit-card"></i> <i class="bi bi-paypal"></i> <i class="bi bi-bank"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== CART SIDEBAR ===================== -->
+  <div class="sidebar-overlay" id="sidebarOverlay" onclick="closeSidebars()"></div>
+
+  <div class="nexus-sidebar" id="cartSidebar">
+    <div class="sidebar-header">
+      <h5><i class="bi bi-bag"></i> YOUR CART</h5>
+      <button onclick="closeSidebars()"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <div class="sidebar-body" id="cartItems"></div>
+    <div class="sidebar-footer" id="cartFooter"></div>
+  </div>
+
+  <!-- ===================== WISHLIST SIDEBAR ===================== -->
+  <div class="nexus-sidebar" id="wishlistSidebar">
+    <div class="sidebar-header">
+      <h5><i class="bi bi-heart"></i> WISHLIST</h5>
+      <button onclick="closeSidebars()"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <div class="sidebar-body" id="wishlistItems"></div>
+  </div>
+
+  <!-- ===================== TOAST ===================== -->
+  <div class="nexus-toast" id="nexusToast"></div>
+
+  <!-- ===================== BACK TO TOP ===================== -->
+  <button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
